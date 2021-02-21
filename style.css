@@ -1,0 +1,64 @@
+.bg-success {
+    background-color: #47ff6f !important;
+}
+
+hr.star-light,
+hr.star-dark {
+    border: none;
+    border-bottom: 4px solid;
+    max-width: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+hr.star-light::after,
+hr.star-dark::after {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2rem;
+    position: relative;
+    top: -23px;
+    padding: 0 10px;
+}
+
+hr.star-light::after {
+    background-color: #47ff6f;
+}
+
+hr.star-dark::after {
+    background-color: #fff;
+}
+
+#about hr.star-light::after {
+    background-color: #007BFF;
+}
+
+.subtitle {
+    letter-spacing: 1px;
+}
+
+.card-image {
+    position: relative;
+}
+
+.img-overlay {
+    position: absolute;
+    background-color: #47ff6f;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.img-overlay:hover {
+    opacity: 0.7;
+}
+
+.overlay-icon i {
+    position: absolute;
+    font-size: 3.5rem;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
